@@ -207,7 +207,7 @@ class IODeviceInterface(IOInterface):
         return a list of all signals
         """
         with self.state_mutex:
-            return copy.deepcopy(self.signals.keys())
+            return copy.deepcopy(list(self.signals.keys()))
 
     def get_signal_type(self, signal_name):
         """
@@ -253,7 +253,7 @@ class IODeviceInterface(IOInterface):
         return a list of all ports
         """
         with self.state_mutex:
-            return copy.deepcopy(self.ports.keys())
+            return copy.deepcopy(list(self.ports.keys()))
 
     def get_port_type(self, port_name):
         """
