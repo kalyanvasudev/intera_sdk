@@ -21,8 +21,8 @@ import math
 import operator
 import numpy as np
 
-import bezier
-import minjerk
+import intera_joint_trajectory_action.bezier as bezier
+import intera_joint_trajectory_action.minjerk as minjerk
 
 import rospy
 
